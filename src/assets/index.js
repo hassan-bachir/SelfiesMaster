@@ -26,26 +26,14 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import bootstrap from "./tech/bootstrap.png";
 import next from "./tech/next.png";
 import postman from "./tech/postman.png";
 import laravel from "./tech/laravel.png";
 import linkedin from "./tech/linkedin.png";
 
-import rick from "./rick.jpg";
-import ali from "./Ali.jpg";
-import bilal from "./bilal.jpeg";
-import hassan from "./hassan.jpg";
 export {
     linkedin,
-    hassan,
-    bilal,
-    ali,
-    rick,
     laravel,
     postman,
     next,
@@ -75,7 +63,4 @@ export {
     shopify,
     starbucks,
     tesla,
-    carrent,
-    jobit,
-    tripguide,
 };
