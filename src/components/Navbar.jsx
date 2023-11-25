@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-tertiary `}
+            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
                 <Link
@@ -22,14 +22,8 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="logo"
-                        className="w-9 h-9 object-contain  "
+                        className="w-36 object-contain  "
                     />
-                    <p className="text-white text-[18px] mt-1 font-bold cursor-pointer flex">
-                        Hassan Bachir &nbsp;
-                        <span className="sm:block hidden">
-                            |&nbsp; Portfolio
-                        </span>
-                    </p>
                 </Link>
             </div>
         </nav>
