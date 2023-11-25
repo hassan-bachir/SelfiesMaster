@@ -1,3 +1,3 @@
 import logo from "./logo.svg";
-
-export { logo };
+import yellowshutter from "./yellowshutter.png";
+export { logo, yellowshutter };
