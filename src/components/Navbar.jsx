@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo } from "../assets";
+import { logo, menu, close } from "../assets";
 const Navbar = () => {
     const [active, setActive] = useState("");
+    const [toggle, setToggle] = useState(false);
 
     return (
         <nav
@@ -40,7 +41,14 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="sm:hidden flex flex-1 justify-end items-center"></div>
+                <div className="sm:hidden flex flex-1 justify-end items-center">
+                    <img
+                        src={toggle ? close : menu}
+                        alt="menu"
+                        className="w-[28px] h-[28px] object-contain cursor-pointer"
+                        onClick={() => setToggle(!toggle)}
+                    />
+                </div>
             </div>
         </nav>
     );
