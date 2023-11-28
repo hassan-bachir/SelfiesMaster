@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="logo"
-                        className="w-36 object-contain  "
+                        className="w-28 object-contain  "
                     />
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
