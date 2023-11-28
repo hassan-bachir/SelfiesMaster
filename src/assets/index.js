@@ -1,3 +1,4 @@
 import logo from "./logo.svg";
 import yellowshutter from "./yellowshutter.png";
-export { logo, yellowshutter };
+import menu from "./menu.svg";
+export { logo, yellowshutter, menu };

@@ -40,7 +40,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <div></div>
+                <div className="sm:hidden flex flex-1 justify-end items-center"></div>
             </div>
         </nav>
     );
