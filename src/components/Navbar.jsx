@@ -6,10 +6,22 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+    }, []);
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-tertiary `}
+            className={`${
+                styles.paddingX
+            } w-full flex items-center py-5 fixed top-0 z-20 ${
+                scrollPosition > 100 ? "bg-tertiary" : "bg-transparent"
+            } `}
         >
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
                 <Link
