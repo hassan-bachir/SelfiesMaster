@@ -4,7 +4,7 @@ import { video } from "../assets";
 const Hero = () => {
     return (
         <motion.section
-            className="relative w-full h-screen mx-auto bg-secondary"
+            className="relative w-full h-screen mx-auto bg-primary"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
